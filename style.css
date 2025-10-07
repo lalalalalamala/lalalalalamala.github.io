@@ -7,9 +7,12 @@ h1 {
  color: violet;
  font-size: 1rem;
  text-decoration: underline;
- text-shadow: 2px 2px 5px brown;
 }
 
 p {
 font-style: italic;
+}
+
+h2 {
+text-shadow: 2px 2px red;
 }
