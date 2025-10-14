@@ -28,7 +28,7 @@ color: Brown;
  color: blue;
 }
 
-.question{
- border: 10x;
+.question {
+ border-style: dashed;
  border-color: blueviolet;
 }
