@@ -27,3 +27,9 @@ color: Brown;
 .name {
  color: blue;
 }
+
+.question{
+ border: 5px;
+ border-color: blueviolet;
+
+}
