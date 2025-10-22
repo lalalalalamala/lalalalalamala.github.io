@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alpaca Adventures</title>
+<link rel="stylesheet" href="more.css"> <!--the file name doesn’t match the actual CSS file (more.css) and is missing the .css extension. It is essential to resolve this issue so that the browser can locate and load the correct stylesheet. If not fixed, the webpage will appear plain and unstyled, ignoring all the design, colors, fonts, and layout defined in the CSS.-->
+</head>
+<body>
+<div id="sidebar">
+<h2>🦙 Alpaca Adventures</h2>
+<h2> Name</h2>
+<ul>
+<li><a href="#home">Home</a></li><!-- lacks a #-->
+<li><a href="#wool">Wool</a></li>
+<li><a href="#herds">Herd Life</a></li>
+<li><a href="#fun">Fun Facts</a></li> <!-- I added the losing tag for the li. This is important to add because if you open the tag and don't close it, the code isn't going to function, and the browser wouldn't be able to read, resulting in an error or no result.-->
+</ul>
+</div>
+<div id="content"> <!-- lacks a closing div tag.If the <div> isn’t closed, the browser can’t correctly understand where the sidebar ends. This can break the layout of your page, causing elements to appear in the wrong place, overlap, or lose styling from your CSS.-->
+<div id="home" class="section light"> <!-- lacks a closing div tag-->
+<h1>Welcome to Alpaca Adventures</h1>
+<p>Alpacas live in the mountains of Peru and are known for their soft wool and gentle
+personalities. They travel in groups called herds.</p>
+</div> <!-- added a closing div tag for the <div id="home" class="section light">-->
+</div> <!-- added a closing div tag for the <div id="content">-->
+<div id=wool class=section dark>
+<h2>Wonderful Wool</h2>h2> <!-- lacks a closing tag for the h2-->
+<p>Alpaca wool is light, warm, and water-resistant. It's sheared every year to make cozy
+clothing.</p> <!-- there is text without any tag here that needs to be supported by p tags. Added an opening < p> tag and a closing < p> tag so the browser could read the code.-->
+<div class="wool-box">
+<p>This box demonstrates <strong>absolute positioning</strong>.</p>
+<!-- an opening p tag is left here for no reason and needs to be removed-->
+<div class="wool-detail">
+<p>I'm a smaller box positioned inside the larger one!</p><!-- there is a closing p tag without an opening p tag, so I added one-->
+</div>
+</div>
+</div>
+<div id="herds" class="section light">
+<h2>The Herd Life</h2>
+<p>Alpacas are social animals and hum to each other to communicate. They also have a
+leader who helps keep order in the group.</p>
+</div>
+<div id="fun" class="section dark">
+<h2>Fun Facts</h2>
+<ul>
+<li>Alpacas can live up to 20 years.</li><!-- lacks a closing tag-->
+<li>They rarely spit at people — only other alpacas!</li>
+<li>Each alpaca has a unique “hum” sound.</li><!--An extra closing tag-->
+</ul>
+</div>
+<div id="footer">
+<p>© 2025 Alpaca Adventures</p>
+</div>
+</body>
+</html>
