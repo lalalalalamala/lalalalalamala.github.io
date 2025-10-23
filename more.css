@@ -45,7 +45,7 @@ border-radius: 10px;
 .light {
 background-color: #fff8e6;
 }
-.dark { /* the id is wrong it is supposed to be dark*/
+.dark { /* the class is wrong it is supposed to be dark*/
 background-color: #e7cba9;
 color: #3b2b0a;
 }
@@ -71,3 +71,5 @@ text-align: center;
 padding: 20px;
 background-color: #d8b382;
 color: white;
+}
+  /* there isn't a closing curly bracket here*/
