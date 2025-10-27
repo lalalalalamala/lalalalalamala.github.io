@@ -4,53 +4,88 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alpaca Adventures</title>
-<link rel="stylesheet" href="more.css"> <!--the file name doesn’t match the actual CSS file (more.css) and is missing the .css extension. It is essential to resolve this issue so that the browser can locate and load the correct stylesheet. If not fixed, the webpage will appear plain and unstyled, ignoring all the design, colors, fonts, and layout defined in the CSS.-->
+<link rel="stylesheet" href="more.css"> 
+<!-- Problem: CSS filename did not match actual file. 
+     Why: Without the correct stylesheet, the page appears unstyled, and layout/colors/fonts are ignored. 
+     Change: corrected the filename by changing it to more.css so the browser can load styles. -->
 </head>
 <body>
 <div id="sidebar">
 <h2>🦙 Alpaca Adventures</h2>
-<h2> Name </h2>
+<h2>Maha Latify</h2>
 <ul>
-<li><a href="#home">Home</a></li><!-- lacks a #-->
+<li><a href="#home">Home</a></li> 
+<!-- Problem: href missing # for internal link. 
+     Why: Clicking this link would not scroll to the home section, breaking navigation. 
+     Change: Added # to link to #home. -->
 <li><a href="#wool">Wool</a></li>
 <li><a href="#herds">Herd Life</a></li>
-<li><a href="#fun">Fun Facts</a></li> <!-- I added the losing tag for the li. This is important to add because if you open the tag and don't close it, the code isn't going to function, and the browser wouldn't be able to read, resulting in an error or no result.-->
+<li><a href="#fun">Fun Facts</a></li> 
+<!-- Problem: li was missing a closing tag. 
+     Why: Unclosed li can break list rendering and styling. 
+     Change: Closed li properly. -->
 </ul>
 </div>
-<div id="content"> <!-- lacks a closing div tag.If the <div> isn’t closed, the browser can’t correctly understand where the sidebar ends. This can break the layout of your page, causing elements to appear in the wrong place, overlap, or lose styling from your CSS.-->
-<div id="home" class="section light"> <!-- lacks a closing div tag-->
+
+<div id="content"> 
+<!-- Problem: #content div could have been left unclosed. 
+     Why: Layout breaks and sidebar margin might not apply to all content. 
+     Change: Ensured #content wraps all sections properly and closed it at the end. -->
+
+<div id="home" class="section light"> 
 <h1>Welcome to Alpaca Adventures</h1>
-<p>Alpacas live in the mountains of Peru and are known for their soft wool and gentle
-personalities. They travel in groups called herds.</p>
-</div> <!-- added a closing div tag for the <div id="home" class="section light">-->
-</div> <!-- added a closing div tag for the <div id="content">-->
-<div id="wool" class="section dark"> <!-- the attribute values should be in quotes. The attribute wool and section are not in quotes-->
-<h2>Wonderful Wool</h2> <!-- lacks a closing tag for the h2--> 
-<p>Alpaca wool is light, warm, and water-resistant. It's sheared every year to make cozy
-clothing.</p> <!-- there is text without any tag here that needs to be supported by p tags. Added an opening < p> tag and a closing < p> tag so the browser could read the code.-->
+<p>Alpacas live in the mountains of Peru and are known for their soft wool and gentle personalities. They travel in groups called herds.</p>
+</div> 
+<!-- Problem: #home div missing closing tag. 
+     Why: Layout issues, the browser may misinterpret the structure. 
+     Change: Closed the #home div properly. -->
+
+<div id="wool" class="section dark"> 
+<h2>Wonderful Wool</h2> 
+<!-- Problem: h2 might have been unclosed. 
+     Why: Text formatting could break, and the browser may merge headings with the next content. 
+     Change: Closed h2 properly. -->
+<p>Alpaca wool is light, warm, and water-resistant. It's sheared every year to make cozy clothing.</p> 
+<!-- Problem: Text not wrapped in p tags. 
+     Why: The Browser might not apply proper spacing and paragraph styling. 
+     Change: Wrapped in <p> tags. -->
 <div class="wool-box">
 <p>This box demonstrates <strong>absolute positioning</strong>.</p>
-<!-- an opening p tag is left here for no reason and needs to be removed-->
+<!-- Problem: Extra opening p tag previously. 
+     Why: Invalid HTML could cause layout issues. 
+     Change: Removed unnecessary p tag. -->
 <div class="wool-detail">
-<p>I'm a smaller box positioned inside the larger one!</p><!-- there is a closing p tag without an opening p tag, so I added one-->
+<p>I'm a smaller box positioned inside the larger one!</p>
+<!-- Problem: There was a closing </p> tag without a matching opening <p> tag in the original code. 
+     Why: Mismatched paragraph tags create invalid HTML, which can cause browsers to render the text incorrectly or break the layout inside the box. 
+     Change: Added the opening <p> tag so the paragraph is properly enclosed. -->
 </div>
 </div>
 </div>
+
 <div id="herds" class="section light">
 <h2>The Herd Life</h2>
-<p>Alpacas are social animals and hum to each other to communicate. They also have a
-leader who helps keep order in the group.</p>
+<p>Alpacas are social animals and hum to each other to communicate. They also have a leader who helps keep order in the group.</p>
 </div>
+
 <div id="fun" class="section dark">
 <h2>Fun Facts</h2>
 <ul>
-<li>Alpacas can live up to 20 years.</li><!-- lacks a closing tag-->
+<li>Alpacas can live up to 20 years.</li>
+<!-- Problem: li missing closing tag. 
+     Why: Could break list formatting and spacing. 
+     Change: Closed li properly. -->
 <li>They rarely spit at people — only other alpacas!</li>
-<li>Each alpaca has a unique “hum” sound.</li><!--An extra closing tag-->
+<li>Each alpaca has a unique “hum” sound.</li>
+<!-- Problem: Extra closing tag in original. 
+     Why: The Browser may misinterpret the list structure and break styling. 
+     Change: Removed extra closing tag. -->
 </ul>
 </div>
+
 <div id="footer">
 <p>© 2025 Alpaca Adventures</p>
 </div>
+</div> <!-- Fixed: Closing #content div to wrap all content properly and prevent layout overlap -->
 </body>
 </html>
