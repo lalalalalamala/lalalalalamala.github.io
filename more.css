@@ -1,75 +1,91 @@
-body {
-font-family: "Trebuchet MS", sans-serif;
-margin: 0; /* changed this from 0 to 250x*/
-color: #3b2b0a;
-} /* the code doesn't have an ending curly bracket*/
-#sidebar { /* you should have . instead of # because it isn't a class but an id*/
-position: fixed;
-top: 0; /*you cannot write yes it should be wether auto or 0*/
-left: 0;
-width: 220px;
-height: 100%;
-background-color: #d8b382;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alpaca Adventures</title>
+<link rel="stylesheet" href="more.css"> 
+<!-- Problem: CSS filename did not match actual file. 
+     Why: Without the correct stylesheet, the page appears unstyled and layout/colors/fonts are ignored. 
+     Change: corrected filename by changing it to more.css so browser can load styles. -->
+</head>
+<body>
+<div id="sidebar">
+<h2>🦙 Alpaca Adventures</h2>
+<h2>Maha Latify</h2>
+<ul>
+<li><a href="#home">Home</a></li> 
+<!-- Problem: href missing # for internal link. 
+     Why: Clicking this link would not scroll to the home section, breaking navigation. 
+     Change: Added # to link to #home. -->
+<li><a href="#wool">Wool</a></li>
+<li><a href="#herds">Herd Life</a></li>
+<li><a href="#fun">Fun Facts</a></li> 
+<!-- Problem: li was missing closing tag. 
+     Why: Unclosed li can break list rendering and styling. 
+     Change: Closed li properly. -->
+</ul>
+</div>
 
-padding: 20px;
-box-shadow: 3px 0 8px rgba(0,0,0,0.2);
-}
-#sidebar h2 {
-color: white; /* you can't write color as what because it needs to be an actually real color or the browser can't find the color and so it wouldn't make the change*/
-text-align: center;
-}
-#sidebar ul {
-list-style: none;
-padding: 0;
-}
-#sidebar li {
-margin: 15px 0;
-}
-#sidebar a {
-color: white;
-text-decoration: none;
-}
-#sidebar a:hover {
-text-decoration: underline;
-}
-#content {
-margin-left: 250px;
-padding: 40px;
-background-color: #fdf9f4; /* this color lacks a #*/
-}
-.section {
-padding: 50px; /* this number lacks a px*/
-margin-bottom: 50px; /* this lacks a closing semicolone*/
-border-radius: 10px;
-}
-.light {
-background-color: #fff8e6;
-}
-.dark { /* the class is wrong it is supposed to be dark*/
-background-color: #e7cba9;
-color: #3b2b0a;
-}
-.wool-box {
-position: relative;/* the postition lacks a : */
-background-color: #f3e0b6;
-padding: 30px;
-margin-top: 25px;
-border-radius: 8px;
-}
-.wool-detail { /* the id lacks an opening curly bracket*/
-position: absolute;
-bottom: 10px;
-right: 10px;
-background-color: #d4a373;
-color: white;
-padding: 10px;
-border-radius: 5px;
-}
+<div id="content"> 
+<!-- Problem: #content div could have been left unclosed. 
+     Why: Layout breaks and sidebar margin might not apply to all content. 
+     Change: Ensured #content wraps all sections properly and closed it at the end. -->
 
-#footer {
-text-align: center;
-padding: 20px;
-background-color: #d8b382;
-color: white;
-}
-  /* there isn't a closing curly bracket here*/
+<div id="home" class="section light"> 
+<h1>Welcome to Alpaca Adventures</h1>
+<p>Alpacas live in the mountains of Peru and are known for their soft wool and gentle personalities. They travel in groups called herds.</p>
+</div> 
+<!-- Problem: #home div missing closing tag. 
+     Why: Layout issues, browser may misinterpret structure. 
+     Change: Closed the #home div properly. -->
+
+<div id="wool" class="section dark"> 
+<h2>Wonderful Wool</h2> 
+<!-- Problem: h2 might have been unclosed. 
+     Why: Text formatting could break and browser may merge heading with next content. 
+     Change: Closed h2 properly. -->
+<p>Alpaca wool is light, warm, and water-resistant. It's sheared every year to make cozy clothing.</p> 
+<!-- Problem: Text not wrapped in p tags. 
+     Why: Browser might not apply proper spacing and paragraph styling. 
+     Change: Wrapped in <p> tags. -->
+<div class="wool-box">
+<p>This box demonstrates <strong>absolute positioning</strong>.</p>
+<!-- Problem: Extra opening p tag previously. 
+     Why: Invalid HTML could cause layout issues. 
+     Change: Removed unnecessary p tag. -->
+<div class="wool-detail">
+<p>I'm a smaller box positioned inside the larger one!</p>
+<!-- Problem: There was a closing </p> tag without a matching opening <p> tag in the original code. 
+     Why: Mismatched paragraph tags create invalid HTML, which can cause browsers to render the text incorrectly or break the layout inside the box. 
+     Change: Added the opening <p> tag so the paragraph is properly enclosed. -->
+</div>
+</div>
+</div>
+
+<div id="herds" class="section light">
+<h2>The Herd Life</h2>
+<p>Alpacas are social animals and hum to each other to communicate. They also have a leader who helps keep order in the group.</p>
+</div>
+
+<div id="fun" class="section dark">
+<h2>Fun Facts</h2>
+<ul>
+<li>Alpacas can live up to 20 years.</li>
+<!-- Problem: li missing closing tag. 
+     Why: Could break list formatting and spacing. 
+     Change: Closed li properly. -->
+<li>They rarely spit at people — only other alpacas!</li>
+<li>Each alpaca has a unique “hum” sound.</li>
+<!-- Problem: Extra closing tag in original. 
+     Why: Browser may misinterpret list structure and break styling. 
+     Change: Removed extra closing tag. -->
+</ul>
+</div>
+
+<div id="footer">
+<p>© 2025 Alpaca Adventures</p>
+</div>
+</div> <!-- Fixed: Closing #content div to wrap all content properly and prevent layout overlap -->
+</body>
+</html>
