@@ -1,7 +1,8 @@
 body {
   /*background-color: #33080b;*/
-  background-image: url(https://wallpaperaccess.com/full/412648.jpg)
-  
+  background-image: url(https://wallpaperaccess.com/full/412648.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 p {
   color: white;
