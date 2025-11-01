@@ -3,15 +3,20 @@ body {
     margin: 0;
     color: #3b2b0a;
 } 
-/* Problem: Missing closing bracket in original code. 
-   Why: Browser could ignore all CSS rules after body, breaking page styling. 
-   Change: Added closing }. */
+/* Problem: The original body selector was missing a closing curly bracket. 
+   Why: Without a closing bracket, the browser ignores all CSS rules after this block, leaving most styles unapplied. 
+   Fix: Added the missing closing bracket to complete the CSS declaration. */
 
-#sidebar {
+#sidebar {     /* Problem: The selector was written as '.sidebar' instead of '#sidebar'.  
+       Why: In CSS, a period (.) targets a class selector, while a hash (#) targets an ID selector.  
+       Using '.sidebar' failed to apply the intended styles to the element with the id="sidebar", 
+       resulting in no positioning or layout effects on the sidebar.  
+       Fix: Changed '.sidebar' to '#sidebar' to correctly target the sidebar element by its ID and 
+       ensure proper styling and fixed positioning. */
     position: fixed;
-    top: 0; /* Problem: The 'top' property was yes. 
-   Why: If 'top' is not set or set improperly, the sidebar may not align correctly at the top of the page, causing layout issues or overlapping content. 
-   Change: Set 'top: 0;' to fix the sidebar at the top edge of the viewport. */
+    top: 0;   /* Problem: The original value for the 'top' property was 'yes', which is invalid CSS syntax. 
+     Why: Invalid property values prevent the element from positioning correctly, causing misalignment of the sidebar. 
+     Fix: Replaced 'yes' with a valid unit-based value '0' to fix the sidebar at the top of the viewport. */
     left: 0;
     width: 220px;
     height: 100%;
@@ -22,9 +27,9 @@ body {
 
 #sidebar h2 {
     color: white; 
-    /* Problem: color is set to ("what"). 
-       Why: Invalid color would be ignored and text color not applied. 
-       Change: Set proper color: white. */
+      /* Problem: The original color value was 'what', which is not a valid CSS color keyword. 
+     Why: Invalid color values are ignored, causing default or unintended text colors. 
+     Fix: Changed the color value to 'white' to ensure proper text contrast against the background. */
     text-align: center;
 }
 
@@ -50,20 +55,20 @@ body {
     margin-left: 250px;
     padding: 40px;
     background-color: #fdf9f4; 
-    /* Problem: Color lacked # in original. 
-       Why: Browser would ignore color and default background applied. 
-       Change: Added # to make it a valid hex color. */
+  /* Problem: The original background-color was written as 'fdf9f4' without a '#' symbol. 
+     Why: Missing the '#' makes the value invalid, and browsers ignore it. 
+     Fix: Added '#' to form a valid hexadecimal color code (#fdf9f4). */
 }
 
 .section {
     padding: 50px; 
-    /* Problem: Missing px unit. 
-       Why: Without units, property is invalid and ignored. 
-       Change: Added px unit. */
+  /* Problem: The original padding value was '50' without a unit. 
+     Why: CSS requires units (px, em, etc.); otherwise, the declaration is ignored. 
+     Fix: Added 'px' to make the property valid. */
     margin-bottom: 50px; 
-    /* Problem: Missing semicolon in original. 
-       Why: Next rule could fail or be ignored. 
-       Change: Added semicolon. */
+  /* Problem: The original rule was missing a semicolon after 'margin-bottom'. 
+     Why: Without a semicolon, subsequent properties like 'border-radius' are ignored. 
+     Fix: Added a semicolon to correctly separate CSS declarations. */
     border-radius: 10px;
 }
 
@@ -71,18 +76,18 @@ body {
     background-color: #fff8e6;
 }
 
-.dark { /* Problem: The class name was incorrectly written as 'dork' before. 
-   Why: With the wrong class name, the styles for dark sections would not apply, causing incorrect background colors and text styling on those sections. 
-   Change: Corrected the class name to 'dark' so the CSS targets the intended elements. */
+.dark { /* Problem: The original class was incorrectly named 'dork'. 
+     Why: A mismatched class name prevents styles from being applied to intended elements. 
+     Fix: Renamed 'dork' to 'dark' to match the HTML class and ensure correct styling. */
     background-color: #e7cba9;
     color: #3b2b0a;
 }
 
 .wool-box {
     position: relative; 
-    /* Problem: Missing colon in original. 
-       Why: Without colon, property ignored and layout broken. 
-       Change: Added colon. */
+ /* Problem: The original property was written as 'position relative;' without a colon. 
+     Why: Missing colons make CSS properties invalid, causing positioning to fail. 
+     Fix: Added the missing colon to correctly define the property. */
     background-color: #f3e0b6;
     padding: 30px;
     margin-top: 25px;
@@ -90,9 +95,9 @@ body {
 }
 
 .wool-detail { 
-    /* Problem: Missing opening curly bracket in original. 
-       Why: CSS block ignored, absolute positioning not applied. 
-       Change: Added opening {. */
+  /* Problem: The original rule block for .wool-detail was missing an opening curly bracket. 
+     Why: Without an opening bracket, all its properties are ignored by the browser. 
+     Fix: Added the opening curly bracket to define the declaration block correctly. */
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -108,6 +113,6 @@ body {
     background-color: #d8b382;
     color: white;
 }
-/* Problem: Missing closing bracket in original CSS. 
-   Why: Could invalidate remaining CSS rules. 
-   Change: Added closing bracket. */
+/* Problem: The original CSS file did not include a final closing bracket for the last selector. 
+   Why: Missing closing brackets cause syntax errors, making the final rule set invalid. 
+   Fix: Added the closing bracket to complete the CSS syntax properly. */
