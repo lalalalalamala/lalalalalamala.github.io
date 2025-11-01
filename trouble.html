@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alpaca Adventures</title>
 <link rel="stylesheet" href="more.css"> 
-<!-- Problem: CSS filename did not match actual file. 
-     Why: Without the correct stylesheet, the page appears unstyled, and layout/colors/fonts are ignored. 
-     Change: corrected the filename by changing it to more.css so the browser can load styles. -->
+  <!-- Problem: The original stylesheet link referenced 'alpacascss' instead of a valid file path. 
+       Why: Without the correct file reference, the browser cannot load CSS styles, resulting in an unstyled webpage. 
+       Fix: Updated the href attribute to 'more.css' so the correct external stylesheet is applied. -->
 </head>
 <body>
 <div id="sidebar">
@@ -15,50 +15,49 @@
 <h2>Maha Latify</h2>
 <ul>
 <li><a href="#home">Home</a></li> 
-<!-- Problem: href missing # for internal link. 
-     Why: Clicking this link would not scroll to the home section, breaking navigation. 
-     Change: Added # to link to #home. -->
+    <!-- Problem: The original anchor link was missing the '#' for the internal reference. 
+           Why: Without '#', the link points nowhere and breaks navigation functionality within the page. 
+           Fix: Added '#' before 'home' to correctly reference the internal section ID. -->
 <li><a href="#wool">Wool</a></li>
 <li><a href="#herds">Herd Life</a></li>
 <li><a href="#fun">Fun Facts</a></li> 
-<!-- Problem: li was missing a closing tag. 
-     Why: Unclosed li can break list rendering and styling. 
-     Change: Closed li properly. -->
+      <!-- Problem: The final <li> tag was missing a closing tag. 
+           Why: Unclosed list items can cause list formatting to break and affect how styles are applied. 
+           Fix: Added the missing closing </li> tag to properly terminate the list element. -->
 </ul>
 </div>
 
 <div id="content"> 
-<!-- Problem: #content div could have been left unclosed. 
-     Why: Layout breaks and sidebar margin might not apply to all content. 
-     Change: Ensured #content wraps all sections properly and closed it at the end. -->
+    <!-- Problem: The original structure did not properly close the #content container. 
+         Why: Missing a closing </div> for #content causes the browser to misinterpret the layout and can make styling cascade incorrectly across sections. 
+         Fix: Ensured #content wraps all main sections and added a proper closing </div> at the end. -->
 
 <div id="home" class="section light"> 
 <h1>Welcome to Alpaca Adventures</h1>
 <p>Alpacas live in the mountains of Peru and are known for their soft wool and gentle personalities. They travel in groups called herds.</p>
 </div> 
-<!-- Problem: #home div missing closing tag. 
-     Why: Layout issues, the browser may misinterpret the structure. 
-     Change: Closed the #home div properly. -->
-
+    <!-- Problem: The #home section was missing a closing </div>. 
+         Why: Unclosed section elements cause improper nesting, leading to unpredictable rendering and layout errors. 
+         Fix: Added a closing </div> to properly terminate the #home section. -->
 <div id="wool" class="section dark"> 
 <h2>Wonderful Wool</h2> 
-<!-- Problem: h2 might have been unclosed. 
-     Why: Text formatting could break, and the browser may merge headings with the next content. 
-     Change: Closed h2 properly. -->
+<!-- Problem: The <h2> element was not closed in the original code. 
+           Why: Leaving a heading unclosed merges following content into the heading context, breaking document semantics and accessibility. 
+           Fix: Closed the <h2> tag to ensure proper heading structure. -->
 <p>Alpaca wool is light, warm, and water-resistant. It's sheared every year to make cozy clothing.</p> 
-<!-- Problem: Text not wrapped in p tags. 
-     Why: The Browser might not apply proper spacing and paragraph styling. 
-     Change: Wrapped in <p> tags. -->
+ <!-- Problem: The text about alpaca wool was not wrapped inside a paragraph element. 
+           Why: Without <p> tags, browsers may not apply proper spacing and semantic meaning, causing text alignment issues. 
+           Fix: Enclosed the text in <p> tags for proper paragraph formatting. -->
 <div class="wool-box">
 <p>This box demonstrates <strong>absolute positioning</strong>.</p>
-<!-- Problem: Extra opening p tag previously. 
-     Why: Invalid HTML could cause layout issues. 
-     Change: Removed unnecessary p tag. -->
+     <!-- Problem: The original HTML contained an extra opening <p> tag inside this section. 
+             Why: Extra paragraph tags break valid HTML and can alter spacing or cause unexpected text flow. 
+             Fix: Removed the unnecessary <p> tag to maintain valid structure. -->
 <div class="wool-detail">
 <p>I'm a smaller box positioned inside the larger one!</p>
-<!-- Problem: There was a closing </p> tag without a matching opening <p> tag in the original code. 
-     Why: Mismatched paragraph tags create invalid HTML, which can cause browsers to render the text incorrectly or break the layout inside the box. 
-     Change: Added the opening <p> tag so the paragraph is properly enclosed. -->
+     <!-- Problem: The original file had a closing </p> tag without a matching opening <p> tag. 
+               Why: Unbalanced paragraph tags cause invalid markup and disrupt browser rendering flow inside this container. 
+               Fix: Added a matching opening <p> tag to ensure valid paragraph structure. -->
 </div>
 </div>
 </div>
@@ -72,20 +71,22 @@
 <h2>Fun Facts</h2>
 <ul>
 <li>Alpacas can live up to 20 years.</li>
-<!-- Problem: li missing closing tag. 
-     Why: Could break list formatting and spacing. 
-     Change: Closed li properly. -->
+       <!-- Problem: The original code had an <li> tag missing its closing </li>. 
+             Why: Without proper closure, list items merge into each other, causing layout inconsistency. 
+             Fix: Added the missing closing </li> to complete the list structure. -->
 <li>They rarely spit at people — only other alpacas!</li>
 <li>Each alpaca has a unique “hum” sound.</li>
-<!-- Problem: Extra closing tag in original. 
-     Why: The Browser may misinterpret the list structure and break styling. 
-     Change: Removed extra closing tag. -->
+     <!-- Problem: The original code included an extra </li> closing tag after the final list item. 
+             Why: Extra closing tags invalidate HTML and can cause list formatting errors. 
+             Fix: Removed the redundant </li> to ensure valid HTML structure. -->
 </ul>
 </div>
 
 <div id="footer">
 <p>© 2025 Alpaca Adventures</p>
 </div>
-</div> <!-- Fixed: Closing #content div to wrap all content properly and prevent layout overlap -->
+</div> <!-- Problem: The #content container needed a closing tag after all sections. 
+       Why: Without this closing tag, the sidebar and footer might overlap or misalign due to broken layout hierarchy. 
+       Fix: Added closing </div> to terminate the #content container properly. This comment already exists i am just showing where i added the closing </div> tag. -->
 </body>
 </html>
