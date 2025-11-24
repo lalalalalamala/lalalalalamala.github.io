@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  background: #1e1b1a;
+  color: #f8e6d0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+/* header */
+header {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+  background: #1e1b1a;
+  z-index: 10;
+}
+
+header h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 58px;
+  margin: 0;
+  line-height: 1;
+}
+
+.subtitle {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: #e6d6c3;
+}
+
+.decor-line {
+  width: 65%;
+  height: 3px;
+  background: #1bb1da;
+  margin: 10px auto 28px;
+}
+
+/* MAIN AREA */
+.main-area {
+  position: relative;
+  min-height: 460px;
+}
+
+/* SUPPORT BOX (left) */
+.support-box {
+  width: 36%;
+  float: left;
+  position: relative;
+  margin-left: 2%;
+  margin-top: 6px;
+  min-height: 360px;
+}
+
+.side-shadow2 {
+  position: absolute;
+  right: -20px;
+  top: 18px;
+  width: 40%;
+  height: 95%;
+  background: #7b3f38;
+  border-radius: 36px;
+  z-index: 0;
+}
+
+.inner-box {
+  position: relative;
+  background: #AA6E39;
+  border-radius: 36px;
+  padding: 32px;
+  z-index: 2;
+  width: 80%;
+  margin-left: 5%;
+}
+
+.inner-box h2 {
+  font-size: 32px;
+  margin: 0 0 14px 0;
+}
+
+.inner-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inner-box li {
+  margin: 10px 0;
+}
+
+.inner-box a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+/* DELIVERY BOX (right) */
+.inner-delivery {
+  background: #a84a37;
+  border-radius: 36px;
+  padding: 32px;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.45;
+  width: 40%;
+  margin-left: 55%;
+  margin-top: 10px;
+}
+
+/* DRINKS IMAGE */
+.small-img {
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%);
+  top: 250px;
+  width: 190px;
+  height: 160px;
+  border-radius: 18px;
+  z-index: 3;
+}
+
+/* HOURS SECTION */
+.hours-section {
+  clear: both;
+  margin-top: 130px;
+}
+
+.hours-section h2 {
+  font-size: 40px;
+  color: #e6d36e;
+  margin-bottom: 18px;
+}
+
+.hours-table {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.hours-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.cell {
+  background: #f4dcb0;
+  color: #3b2f2f;
+  padding: 18px;
+  text-align: center;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.heading {
+  background: #eab376;
+}
+
+/* RESPONSIVE */
+@media (max-width: 920px) {
+  .support-box, .inner-delivery {
+    width: 46%;
+  }
+  .small-img { top: 360px; width: 130px; }
+  header h1 { font-size: 48px; }
+}
+
+@media (max-width: 700px) {
+  .support-box, .inner-delivery, .small-img {
+    position: static;
+    width: 100%;
+    transform: none;
+    margin: 18px 0;
+  }
+  .main-area { min-height: auto; }
+  .small-img { display: block; margin: 0 auto; }
+  .hours-row { grid-template-columns: repeat(2, 1fr); }
+}
