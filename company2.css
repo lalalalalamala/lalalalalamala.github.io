@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  background: #1e1b1a;
+  color: #f8e6d0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+  background: #1e1b1a;
+  z-index: 10;
+}
+
+header h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 58px;
+  margin: 0;
+  line-height: 1;
+}
+
+.subtitle {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: #e6d6c3;
+}
+
+.decor-line {
+  width: 65%;
+  height: 3px;
+  background: #1bb1da;
+  margin: 10px auto 28px;
+}
+
+.transparent-box {
+  width: 300px;
+  height: 120px;
+  background-color: transparent;
+  border: 2px solid white;
+  margin: 50px auto;
+  margin-top: 120px;
+  border-radius: 3%;
+}
+
+p {
+  text-align: center;
+}
+
+.small-rounded-image {
+  width: 220px;
+  height: 190px;
+  border-radius: 15px;
+  margin-left: 20%;
+  margin-top: -16%;
+  position: absolute;
+}
+
+.short-line {
+  width: 300px;
+  border: 1px solid white;
+  margin-top: -200px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: -80px;
+  font-size: 1.3rem;
+  color: #FEBE00;
+}
+
+.container-3 {
+  margin-top: 18%;
+}
+
+.h2tag {
+  margin-top: -47px;
+}
+
+.container-4 {
+  margin-top: 18%;
+}
+
+/* Circle buttons */
+.circle-button,
+.circle-button2,
+.circle-button3 {
+  width: 70px;
+  height: 70px;
+  background-color: #C98860;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  position: absolute; /* fixed semicolon */
+}
+
+.circle-button {
+  margin-top: -33%;
+  margin-left: 30%;
+}
+
+.circle-button2 {
+  margin-top: -15%;
+  margin-left: 30%;
+}
+
+.circle-button3 {
+  margin-top: 3%;
+  margin-left: 30%;
+}
+
+.circle-button:hover,
+.circle-button2:hover,
+.circle-button3:hover {
+  background-color: #e0b837;
+  transform: scale(1.1);
+}
