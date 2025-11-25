@@ -1,291 +1,285 @@
-body {
-    margin: 0;
-    background: #1e1b1a;
-    color: #f8e6d0;
-    font-family: 'Open Sans', sans-serif;
-}
+body { /* Open body styling */
+    margin: 0; /* Remove default margin */
+    background: #1e1b1a; /* Set dark background color */
+    color: #f8e6d0; /* Set light text color */
+    font-family: 'Open Sans', sans-serif; /* Set default font */
+} /* Close body styling */
 
-header {
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 10px;
-    position: sticky;
-    top: 0;
-    background: #1e1b1a;
-    z-index: 10;
-}
+header { /* Open header styling */
+    text-align: center; /* Center-align text */
+    padding-top: 40px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    position: sticky; /* Make header sticky */
+    top: 0; /* Stick to top */
+    background: #1e1b1a; /* Set background color */
+    z-index: 10; /* Layer above other elements */
+} /* Close header styling */
 
-header h1 {
-    font-family: 'Anton', sans-serif;
-    font-size: 58px;
-    margin: 0;
-    line-height: 1;
-}
+header h1 { /* Open h1 in header styling */
+    font-family: 'Anton', sans-serif; /* Set font to Anton */
+    font-size: 58px; /* Set font size */
+    margin: 0; /* Remove default margin */
+    line-height: 1; /* Set line height */
+} /* Close header h1 styling */
 
-.subtitle {
-    font-size: 16px;
-    letter-spacing: 1.5px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    color: #e6d6c3;
-}
+.subtitle { /* Open subtitle styling */
+    font-size: 16px; /* Set font size */
+    letter-spacing: 1.5px; /* Set spacing between letters */
+    margin-top: 12px; /* Top margin */
+    margin-bottom: 12px; /* Bottom margin */
+    color: #e6d6c3; /* Subtitle color */
+} /* Close subtitle styling */
 
-.decor-line {
-    width: 65%;
-    height: 3px;
-    background: #1bb1da;
-    margin: 10px auto 28px;
-}
+.decor-line { /* Open decorative line styling */
+    width: 65%; /* Set width */
+    height: 3px; /* Set height */
+    background: #1bb1da; /* Set line color */
+    margin: 10px auto 28px; /* Center line with top/bottom margin */
+} /* Close decorative line styling */
 
-.transparent-box {
-    width: 300px;
-    height: 120px;
-    background-color: transparent;
-    border: 2px solid white;
-    margin: 50px auto;
-    margin-top: 120px;
-    border-radius: 3%;
-}
+.transparent-box { /* Open transparent box styling */
+    width: 300px; /* Set width */
+    height: 120px; /* Set height */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid white; /* White border */
+    margin: 50px auto; /* Center box horizontally with top/bottom margin */
+    margin-top: 120px; /* Top margin override */
+    border-radius: 3%; /* Rounded corners */
+} /* Close transparent box styling */
 
-p {
-    text-align: center;
-}
+p { /* Open paragraph styling */
+    text-align: center; /* Center text */
+} /* Close paragraph styling */
 
-.small-rounded-image {
-    width: 220px;
-    height: 190px;
-    border-radius: 15px;
-    margin-left: 20%;
-    margin-top: -16%;
-    position: absolute;
-}
+.small-rounded-image { /* Open small image styling */
+    width: 220px; /* Set image width */
+    height: 190px; /* Set image height */
+    border-radius: 15px; /* Round corners */
+    margin-left: 20%; /* Left margin */
+    margin-top: -16%; /* Top margin */
+    position: absolute; /* Absolute positioning */
+} /* Close small image styling */
 
-.short-line {
-    width: 300px;
-    border: 1px solid white;
-    margin-top: -200px;
-}
+.short-line { /* Open short line styling */
+    width: 300px; /* Set width */
+    border: 1px solid white; /* White border */
+    margin-top: -200px; /* Top margin */
+} /* Close short line styling */
 
-h2 {
-    text-align: center;
-    margin-top: -80px;
-    font-size: 1.3rem;
-    color: #FEBE00;
-}
+h2 { /* Open h2 styling */
+    text-align: center; /* Center text */
+    margin-top: -80px; /* Top margin */
+    font-size: 1.3rem; /* Set font size */
+    color: #FEBE00; /* Text color */
+} /* Close h2 styling */
 
-.container-3 {
-    margin-top: 15%;
-}
+.container-3 { /* Open container 3 styling */
+    margin-top: 15%; /* Top margin */
+} /* Close container 3 styling */
 
+.container-4 { /* Open container 4 styling */
+    margin-top: 20%; /* Top margin */
+} /* Close container 4 styling */
 
-.container-4 {
-    margin-top: 20%;
-}
+.overlay-image { /* Open overlay image styling */
+    position: relative; /* Relative positioning */
+    bottom: 100px; /* Move up 100px */
+    right: -20px; /* Move right 20px */
+    width: 150px; /* Set width */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Shadow around image */
+    margin-left: 30%; /* Left margin */
+    height: 130px; /* Set height */
+} /* Close overlay image styling */
 
-.overlay-image {
-    position: relative;
-    bottom: 100px;
-    right: -20px;
-    width: 150px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    margin-left: 30%;
-    height: 130px;
-}
+.short-line2 { /* Open short line 2 styling */
+    width: 300px; /* Set width */
+    border: 1px solid white; /* White border */
+    margin-top: -250px; /* Top margin */
+} /* Close short line 2 styling */
 
-.short-line2 {
-    width: 300px;
-    border: 1px solid white;
-    margin-top: -250px;
-}
+.transparent-box2 { /* Open transparent box 2 styling */
+    width: 300px; /* Set width */
+    height: 120px; /* Set height */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid white; /* White border */
+    margin: 50px auto; /* Center horizontally */
+    border-radius: 3%; /* Rounded corners */
+    margin-left: 65%; /* Left margin */
+    position: absolute; /* Absolute positioning */
+    margin-top: -17%; /* Top margin */
+} /* Close transparent box 2 styling */
 
-.transparent-box2 {
-    width: 300px;
-    height: 120px;
-    background-color: transparent;
-    border: 2px solid white;
-    margin: 50px auto;
-    border-radius: 3%;
-    margin-left: 65%;
-    position: absolute;
-    margin-top: -17%;
-}
+.transparent-box3 { /* Open transparent box 3 styling */
+    margin-top: -15%; /* Top margin */
+    width: 300px; /* Set width */
+    height: 120px; /* Set height */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid white; /* White border */
+    border-radius: 3%; /* Rounded corners */
+    margin-left: 65%; /* Left margin */
+    position: absolute; /* Absolute positioning */
+} /* Close transparent box 3 styling */
 
-.transparent-box3 {
-    margin-top: -15%;
-    width: 300px;
-    height: 120px;
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 3%;
-    margin-left: 65%;
-    position: absolute;
-}
+.circle-button { /* Open circle button styling */
+    width: 70px; /* Width of button */
+    height: 70px; /* Height of button */
+    background-color: #C98860; /* Button color */
+    border-radius: 50%; /* Make circular */
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    font-size: 14px; /* Font size */
+    text-align: center; /* Center text */
+    padding: 10px; /* Padding inside button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow */
+    margin-top: -42%; /* Top margin */
+    margin-left: 23%; /* Left margin */
+    position: absolute; /* Absolute positioning */
+} /* Close circle button styling */
 
-.circle-button {
-    width: 70px;
-    height: 70px;
-    background-color: #C98860;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-    text-align: center;
-    padding: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    margin-top: -42%;
-    margin-left: 23%;
-    position: absolute;
-}
+.circle-button:hover { /* Hover effect for button */
+    background-color: #e0b837; /* Change background on hover */
+    transform: scale(1.1); /* Slightly enlarge button */
+} /* Close hover effect */
 
-.circle-button:hover {
-    background-color: #e0b837;
-    transform: scale(1.1);
-}
+.circle-button2 { /* Open circle button 2 styling */
+    width: 70px; /* Width */
+    height: 70px; /* Height */
+    background-color: #C98860; /* Button color */
+    border-radius: 50%; /* Make circular */
+    display: flex; /* Use flex */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    font-size: 14px; /* Font size */
+    text-align: center; /* Center text */
+    padding: 10px; /* Padding */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth effect */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow */
+    margin-top: -37%; /* Top margin */
+    margin-left: 37%; /* Left margin */
+    position: absolute; /* Absolute positioning */
+} /* Close circle button 2 styling */
 
-.circle-button2 {
-    width: 70px;
-    height: 70px;
-    background-color: #C98860;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-    text-align: center;
-    padding: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    margin-top: -37%;
-    margin-left: 37%;
-    position: absolute;
-}
+.circle-button2:hover { /* Hover effect for button 2 */
+    background-color: #e0b837; /* Change background */
+    transform: scale(1.1); /* Enlarge */
+} /* Close hover effect */
 
-.circle-button2:hover {
-    background-color: #e0b837;
-    transform: scale(1.1);
-}
+.circle-button3 { /* Open circle button 3 styling */
+    width: 70px; /* Width */
+    height: 70px; /* Height */
+    background-color: #C98860; /* Button color */
+    border-radius: 50%; /* Circular */
+    display: flex; /* Flex display */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    font-size: 14px; /* Font size */
+    text-align: center; /* Center text */
+    padding: 10px; /* Padding */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow */
+    margin-top: -16%; /* Top margin */
+    margin-left: 30%; /* Left margin */
+    position: absolute; /* Absolute positioning */
+} /* Close circle button 3 styling */
 
-.circle-button3 {
-    width: 70px;
-    height: 70px;
-    background-color: #C98860;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-    text-align: center;
-    padding: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    margin-top: -16%;
-    margin-left: 30%;
-    position: absolute;
-}
+.circle-button3:hover { /* Hover effect button 3 */
+    background-color: #e0b837; /* Change background */
+    transform: scale(1.1); /* Enlarge */
+} /* Close hover effect */
 
-.circle-button3:hover {
-    background-color: #e0b837;
-    transform: scale(1.1);
-}
+.circle-button4 { /* Open circle button 4 styling */
+    width: 70px; /* Width */
+    height: 70px; /* Height */
+    background-color: #C98860; /* Button color */
+    border-radius: 50%; /* Circular shape */
+    display: flex; /* Flex display */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    font-size: 14px; /* Font size */
+    text-align: center; /* Center text */
+    padding: 10px; /* Padding */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow */
+    margin-top: 4%; /* Top margin */
+    margin-left: 30%; /* Left margin */
+    position: absolute; /* Absolute positioning */
+} /* Close circle button 4 styling */
 
-.circle-button4 {
-    width: 70px;
-    height: 70px;
-    background-color: #C98860;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-    text-align: center;
-    padding: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    margin-top: 4%;
-    margin-left: 30%;
-    position: absolute;
-}
+.circle-button4:hover { /* Hover effect button 4 */
+    background-color: #e0b837; /* Change background */
+    transform: scale(1.1); /* Enlarge */
+} /* Close hover effect */
 
-.circle-button4:hover {
-    background-color: #e0b837;
-    transform: scale(1.1);
-}
+.container-2 { /* Open container-2 styling */
+    margin-top: 20%; /* Top margin */
+} /* Close container-2 */
 
-.container-2 {
-    margin-top: 20%;
-}
+.h2r { /* Open h2r styling */
+    margin-top: 6%; /* Top margin */
+} /* Close h2r */
 
-.h2r {
-    margin-top: 6%;
-}
+nav { /* Open navigation bar styling */
+    width: 100%; /* Full width */
+    background-color: #1e1b1a; /* Dark background */
+    position: fixed; /* Fixed position */
+    top: 0; /* Stick to top */
+    left: 0; /* Left alignment */
+    z-index: 1000; /* High stacking order */
+} /* Close nav */
 
-    /* Nav bar container */
-    nav {
-      width: 100%;                /* full width across the page */
-      background-color: #1e1b1a;  /* dark background */
-      position: fixed;            /* stays at the top */
-      top: 0;
-      left: 0;
-      z-index: 1000;
-    }
+nav ul { /* Open nav list styling */
+    list-style: none; /* Remove bullets */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    display: flex; /* Flex layout */
+    justify-content: center; /* Center items */
+} /* Close nav ul */
 
-    /* Nav list */
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;    /* center the links */
-    }
+nav li { /* Open nav list item */
+    margin: 0 10px; /* Horizontal spacing */
+} /* Close nav li */
 
-    /* Nav items */
-    nav li {
-      margin: 0 10px;             /* small spacing between links */
-    }
+nav a { /* Open nav links */
+    display: block; /* Block display */
+    padding: 10px 15px; /* Padding */
+    text-decoration: none; /* Remove underline */
+    color: #f8e6d0; /* Light text color */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+} /* Close nav a */
 
-    /* Nav links */
-    nav a {
-      display: block;
-      padding: 10px 15px;         /* short width links */
-      text-decoration: none;
-      color: #f8e6d0;             /* light text */
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
+nav a:hover { /* Hover effect for nav links */
+    background-color: #FEBE00; /* Highlight background */
+    color: #1e1b1a; /* Dark text on hover */
+    border-radius: 4px; /* Rounded corners */
+} /* Close hover effect */
 
-    nav a:hover {
-      background-color: #FEBE00;  /* highlight on hover */
-      color: #1e1b1a;
-      border-radius: 4px;
-    }
-
-    /* Add some top padding to body so content isn't hidden behind fixed nav */
-    .content {
-      padding-top: 60px;
-    }
+.content { /* Open content padding */
+    padding-top: 60px; /* Add top padding to avoid nav overlap */
+} /* Close content */
 
 #hard-fancy,
 #fancy,
 #venue-rentals,
-#upcoming {
-  scroll-margin-top: 134px; /* adjust as needed */
-}
+#upcoming { /* Open scroll-margin targets */
+    scroll-margin-top: 134px; /* Adjust scroll position for anchor links */
+} /* Close scroll-margin targets */
 
-html {
-  scroll-padding-top: 164px;
-}
+html { /* Open html styling */
+    scroll-padding-top: 164px; /* Global scroll padding for anchor links */
+} /* Close html styling */
