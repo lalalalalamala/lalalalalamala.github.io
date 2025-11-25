@@ -233,3 +233,48 @@ h2 {
 .h2r {
     margin-top: 6%;
 }
+
+    /* Nav bar container */
+    nav {
+      width: 100%;                /* full width across the page */
+      background-color: #1e1b1a;  /* dark background */
+      position: fixed;            /* stays at the top */
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    /* Nav list */
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;    /* center the links */
+    }
+
+    /* Nav items */
+    nav li {
+      margin: 0 10px;             /* small spacing between links */
+    }
+
+    /* Nav links */
+    nav a {
+      display: block;
+      padding: 10px 15px;         /* short width links */
+      text-decoration: none;
+      color: #f8e6d0;             /* light text */
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #FEBE00;  /* highlight on hover */
+      color: #1e1b1a;
+      border-radius: 4px;
+    }
+
+    /* Add some top padding to body so content isn't hidden behind fixed nav */
+    .content {
+      padding-top: 60px;
+    }
