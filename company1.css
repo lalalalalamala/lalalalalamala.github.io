@@ -1,244 +1,244 @@
 body {
-  margin: 0;
-  background: #1e1b1a;
-  color: #f8e6d0;
-  font-family: 'Open Sans', sans-serif;
+  margin: 0; /* Removes default margin */
+  background: #1e1b1a; /* Sets dark background color */
+  color: #f8e6d0; /* Sets default text color */
+  font-family: 'Open Sans', sans-serif; /* Sets default font */
 }
 
 .container {
-  width: 85%;
-  margin: 0 auto;
-  padding-bottom: 60px;
+  width: 85%; /* Container width relative to page */
+  margin: 0 auto; /* Centers container horizontally */
+  padding-bottom: 60px; /* Adds space at bottom */
 }
 
 /* header */
 header {
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 10px;
-  position: sticky;
-  top: 0;
-  background: #1e1b1a;
-  z-index: 10;
+  text-align: center; /* Centers text in header */
+  padding-top: 40px; /* Top padding */
+  padding-bottom: 10px; /* Bottom padding */
+  position: sticky; /* Keeps header visible on scroll */
+  top: 0; /* Sticks at top */
+  background: #1e1b1a; /* Same background as body */
+  z-index: 10; /* Puts header above other elements */
 }
 
 header h1 {
-  font-family: 'Anton', sans-serif;
-  font-size: 58px;
-  margin: 0;
-  line-height: 1;
+  font-family: 'Anton', sans-serif; /* Sets font for main title */
+  font-size: 58px; /* Large title size */
+  margin: 0; /* Removes default margin */
+  line-height: 1; /* Tight line spacing */
 }
 
 .subtitle {
-  font-size: 16px;
-  letter-spacing: 1.5px;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  color: #e6d6c3;
+  font-size: 16px; /* Smaller font for subtitle */
+  letter-spacing: 1.5px; /* Adds spacing between letters */
+  margin-top: 12px; /* Space above subtitle */
+  margin-bottom: 12px; /* Space below subtitle */
+  color: #e6d6c3; /* Light tan color */
 }
 
 .decor-line {
-  width: 65%;
-  height: 3px;
-  background: #1bb1da;
-  margin: 10px auto 28px;
+  width: 65%; /* Line width relative to container */
+  height: 3px; /* Line thickness */
+  background: #1bb1da; /* Blue color */
+  margin: 10px auto 28px; /* Top, auto center, bottom spacing */
 }
 
 /* MAIN AREA */
 .main-area {
-  position: relative;
-  min-height: 460px;
+  position: relative; /* Allows positioning children absolutely */
+  min-height: 460px; /* Minimum height of main area */
 }
 
 /* SUPPORT BOX (left) */
 .support-box {
-  width: 36%;
-  float: left;
-  position: relative;
-  margin-left: 2%;
-  margin-top: 6px;
-  min-height: 360px;
+  width: 36%; /* Width relative to container */
+  float: left; /* Aligns left */
+  position: relative; /* Enables child positioning */
+  margin-left: 2%; /* Space from left edge */
+  margin-top: 6px; /* Space from top */
+  min-height: 360px; /* Minimum height */
 }
 
 .side-shadow2 {
-  position: absolute;
-  right: -20px;
-  top: 18px;
-  width: 40%;
-  height: 95%;
-  background: #7b3f38;
-  border-radius: 36px;
-  z-index: 0;
+  position: absolute; /* Positioned relative to parent */
+  right: -20px; /* Offset from right */
+  top: 18px; /* Offset from top */
+  width: 40%; /* Shadow width */
+  height: 95%; /* Shadow height */
+  background: #7b3f38; /* Dark red shadow color */
+  border-radius: 36px; /* Rounded corners */
+  z-index: 0; /* Behind inner box */
 }
 
 .inner-box {
-  position: relative;
-  background: #AA6E39;
-  border-radius: 36px;
-  padding: 32px;
-  z-index: 2;
-  width: 80%;
-  margin-left: 5%;
+  position: relative; /* Allows inner content positioning */
+  background: #AA6E39; /* Brownish background */
+  border-radius: 36px; /* Rounded corners */
+  padding: 32px; /* Inner padding */
+  z-index: 2; /* On top of shadow */
+  width: 80%; /* Box width */
+  margin-left: 5%; /* Offset from left */
 }
 
 .inner-box h2 {
-  font-size: 32px;
-  margin: 0 0 14px 0;
+  font-size: 32px; /* Heading size */
+  margin: 0 0 14px 0; /* Bottom spacing */
 }
 
 .inner-box ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  list-style: none; /* Removes bullets */
+  padding: 0; /* Removes padding */
+  margin: 0; /* Removes margin */
 }
 
 .inner-box li {
-  margin: 10px 0;
+  margin: 10px 0; /* Vertical spacing between list items */
 }
 
 .inner-box a {
-  color: #ffffff;
-  text-decoration: underline;
-  font-size: 20px;
+  color: #ffffff; /* Link color white */
+  text-decoration: underline; /* Underlined links */
+  font-size: 20px; /* Font size for links */
 }
 
 /* DELIVERY BOX (right) */
 .inner-delivery {
-  background: #a84a37;
-  border-radius: 36px;
-  padding: 32px;
-  z-index: 2;
-  color: #fff;
-  text-align: center;
-  font-size: 17px;
-  line-height: 1.45;
-  width: 40%;
-  margin-left: 55%;
-  margin-top: 10px;
+  background: #a84a37; /* Dark red background */
+  border-radius: 36px; /* Rounded corners */
+  padding: 32px; /* Inner padding */
+  z-index: 2; /* On top of shadow if any */
+  color: #fff; /* White text */
+  text-align: center; /* Centered text */
+  font-size: 17px; /* Text size */
+  line-height: 1.45; /* Line spacing */
+  width: 40%; /* Box width */
+  margin-left: 55%; /* Moves box to the right */
+  margin-top: 10px; /* Space from top */
 }
 
 /* DRINKS IMAGE */
 .small-img {
-  position: absolute;
-  left: 55%;
-  transform: translateX(-50%);
-  top: 250px;
-  width: 190px;
-  height: 160px;
-  border-radius: 18px;
-  z-index: 3;
+  position: absolute; /* Allows overlapping boxes */
+  left: 55%; /* Horizontal position */
+  transform: translateX(-50%); /* Centers image horizontally */
+  top: 250px; /* Vertical position */
+  width: 190px; /* Image width */
+  height: 160px; /* Image height */
+  border-radius: 18px; /* Rounded corners */
+  z-index: 3; /* On top of other elements */
 }
 
 /* HOURS SECTION */
 .hours-section {
-  clear: both;
-  margin-top: 130px;
+  clear: both; /* Clears floats */
+  margin-top: 130px; /* Space above section */
 }
 
 .hours-section h2 {
-  font-size: 40px;
-  color: #e6d36e;
-  margin-bottom: 18px;
+  font-size: 40px; /* Heading size */
+  color: #e6d36e; /* Yellowish color */
+  margin-bottom: 18px; /* Space below heading */
 }
 
 .hours-table {
-  width: 100%;
-  margin-top: 8px;
+  width: 100%; /* Full width table */
+  margin-top: 8px; /* Space above table */
 }
 
 .hours-row {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 12px;
-  margin-bottom: 12px;
+  display: grid; /* Use grid for days and hours */
+  grid-template-columns: repeat(7, 1fr); /* 7 equal columns */
+  gap: 12px; /* Gap between columns */
+  margin-bottom: 12px; /* Space below row */
 }
 
 .cell {
-  background: #f4dcb0;
-  color: #3b2f2f;
-  padding: 18px;
-  text-align: center;
-  border-radius: 12px;
-  font-weight: 700;
+  background: #f4dcb0; /* Light tan cell color */
+  color: #3b2f2f; /* Dark text color */
+  padding: 18px; /* Inner padding */
+  text-align: center; /* Center text */
+  border-radius: 12px; /* Rounded corners */
+  font-weight: 700; /* Bold text */
 }
 
 .heading {
-  background: #eab376;
+  background: #eab376; /* Different background for heading cells */
 }
 
 /* RESPONSIVE */
 @media (max-width: 920px) {
   .support-box, .inner-delivery {
-    width: 46%;
+    width: 46%; /* Increase width on smaller screens */
   }
-  .small-img { top: 360px; width: 130px; }
-  header h1 { font-size: 48px; }
+  .small-img { top: 360px; width: 130px; } /* Adjust image position & size */
+  header h1 { font-size: 48px; } /* Reduce title size */
 }
 
 @media (max-width: 700px) {
   .support-box, .inner-delivery, .small-img {
-    position: static;
-    width: 100%;
-    transform: none;
-    margin: 18px 0;
+    position: static; /* Reset absolute positioning */
+    width: 100%; /* Full width for mobile */
+    transform: none; /* Remove translation */
+    margin: 18px 0; /* Add spacing */
   }
-  .main-area { min-height: auto; }
-  .small-img { display: block; margin: 0 auto; }
-  .hours-row { grid-template-columns: repeat(2, 1fr); }
+  .main-area { min-height: auto; } /* Adjust height automatically */
+  .small-img { display: block; margin: 0 auto; } /* Center image */
+  .hours-row { grid-template-columns: repeat(2, 1fr); } /* 2 columns for mobile */
 }
 
-    /* Nav bar container */
-    nav {
-      width: 100%;                /* full width across the page */
-      background-color: #1e1b1a;  /* dark background */
-      position: fixed;            /* stays at the top */
-      top: 0;
-      left: 0;
-      z-index: 1000;
-    }
+/* Nav bar container */
+nav {
+  width: 100%; /* Full width navbar */
+  background-color: #1e1b1a; /* Dark background */
+  position: fixed; /* Stays at top when scrolling */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* On top of everything */
+}
 
-    /* Nav list */
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;    /* center the links */
-    }
+/* Nav list */
+nav ul {
+  list-style: none; /* Remove bullets */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  display: flex; /* Horizontal layout */
+  justify-content: center; /* Center links */
+}
 
-    /* Nav items */
-    nav li {
-      margin: 0 10px;             /* small spacing between links */
-    }
+/* Nav items */
+nav li {
+  margin: 0 10px; /* Space between links */
+}
 
-    /* Nav links */
-    nav a {
-      display: block;
-      padding: 10px 15px;         /* short width links */
-      text-decoration: none;
-      color: #f8e6d0;             /* light text */
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
+/* Nav links */
+nav a {
+  display: block; /* Makes entire area clickable */
+  padding: 10px 15px; /* Inner padding */
+  text-decoration: none; /* Remove underline */
+  color: #f8e6d0; /* Light text color */
+  font-weight: bold; /* Bold links */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
 
-    nav a:hover {
-      background-color: #FEBE00;  /* highlight on hover */
-      color: #1e1b1a;
-      border-radius: 4px;
-    }
+nav a:hover {
+  background-color: #FEBE00; /* Highlight on hover */
+  color: #1e1b1a; /* Change text on hover */
+  border-radius: 4px; /* Rounded corners on hover */
+}
 
-    /* Add some top padding to body so content isn't hidden behind fixed nav */
-    .content {
-      padding-top: 60px;
-    }
+/* Add some top padding to body so content isn't hidden behind fixed nav */
+.content {
+  padding-top: 60px; /* Space for fixed nav */
+}
 
 #local-delivery {
-  scroll-margin-top: 134px; /* adjust as needed */
+  scroll-margin-top: 134px; /* Offset when scrolling to anchor */
 }
 
 html {
-  scroll-padding-top: 164px;
+  scroll-padding-top: 164px; /* Offset for anchor scrolling */
 }
 .hh3 {
-  text-align: center;
+  text-align: center; /* Center text */
 }
