@@ -231,3 +231,7 @@ header h1 {
     .content {
       padding-top: 60px;
     }
+
+#local-delivery {
+  scroll-margin-top: 100px; /* adjust as needed */
+}
