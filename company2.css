@@ -1,186 +1,185 @@
 body {
-  margin: 0;
-  background: #1e1b1a;
-  color: #f8e6d0;
-  font-family: 'Open Sans', sans-serif;
+  margin: 0; /* Remove default browser margin */
+  background: #1e1b1a; /* Dark background */
+  color: #f8e6d0; /* Default text color */
+  font-family: 'Open Sans', sans-serif; /* Default font */
 }
 
 header {
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 10px;
-  position: sticky;
-  top: 0;
-  background: #1e1b1a;
-  z-index: 10;
+  text-align: center; /* Center header text */
+  padding-top: 40px; /* Space above header */
+  padding-bottom: 10px; /* Space below header */
+  position: sticky; /* Sticky header on scroll */
+  top: 0; /* Stays at top */
+  background: #1e1b1a; /* Same background as body */
+  z-index: 10; /* Layer above content */
 }
 
 header h1 {
-  font-family: 'Anton', sans-serif;
-  font-size: 58px;
-  margin: 0;
-  line-height: 1;
+  font-family: 'Anton', sans-serif; /* Font for main title */
+  font-size: 58px; /* Large text */
+  margin: 0; /* Remove default margin */
+  line-height: 1; /* Tight line spacing */
 }
 
 .subtitle {
-  font-size: 16px;
-  letter-spacing: 1.5px;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  color: #e6d6c3;
+  font-size: 16px; /* Font size for subtitle */
+  letter-spacing: 1.5px; /* Space between letters */
+  margin-top: 12px; /* Top spacing */
+  margin-bottom: 12px; /* Bottom spacing */
+  color: #e6d6c3; /* Light color */
 }
 
 .decor-line {
-  width: 65%;
-  height: 3px;
-  background: #1bb1da;
-  margin: 10px auto 28px;
+  width: 65%; /* Width of line */
+  height: 3px; /* Thickness of line */
+  background: #1bb1da; /* Line color */
+  margin: 10px auto 28px; /* Center and spacing */
 }
 
 .transparent-box {
-  width: 300px;
-  height: 120px;
-  background-color: transparent;
-  border: 2px solid white;
-  margin: 50px auto;
-  margin-top: 120px;
-  border-radius: 3%;
+  width: 300px; /* Box width */
+  height: 120px; /* Box height */
+  background-color: transparent; /* Transparent background */
+  border: 2px solid white; /* White border */
+  margin: 50px auto; /* Center horizontally with top spacing */
+  margin-top: 120px; /* Additional top spacing */
+  border-radius: 3%; /* Slight rounded corners */
 }
 
 p {
-  text-align: center;
+  text-align: center; /* Center paragraph text */
 }
 
 .small-rounded-image {
-  width: 220px;
-  height: 190px;
-  border-radius: 15px;
-  margin-left: 20%;
-  margin-top: -16%;
-  position: absolute;
+  width: 220px; /* Image width */
+  height: 190px; /* Image height */
+  border-radius: 15px; /* Rounded corners */
+  margin-left: 20%; /* Left margin */
+  margin-top: -16%; /* Pull image upwards */
+  position: absolute; /* Position absolutely in container */
 }
 
 .short-line {
-  width: 300px;
-  border: 1px solid white;
-  margin-top: -200px;
+  width: 300px; /* Width of horizontal line */
+  border: 1px solid white; /* White line */
+  margin-top: -200px; /* Pull line upwards */
 }
 
 h2 {
-  text-align: center;
-  margin-top: -80px;
-  font-size: 1.3rem;
-  color: #FEBE00;
+  text-align: center; /* Center heading */
+  margin-top: -80px; /* Pull heading upwards */
+  font-size: 1.3rem; /* Heading size */
+  color: #FEBE00; /* Yellow color */
 }
 
 .container-3 {
-  margin-top: 18%;
+  margin-top: 18%; /* Space from previous container */
 }
 
 .h2tag {
-  margin-top: -47px;
+  margin-top: -47px; /* Pull heading up */
 }
 
 .container-4 {
-  margin-top: 18%;
+  margin-top: 18%; /* Space from previous container */
 }
 
 /* Circle buttons */
 .circle-button,
 .circle-button2,
 .circle-button3 {
-  width: 70px;
-  height: 70px;
-  background-color: #C98860;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-  text-align: center;
-  padding: 10px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  position: absolute; /* fixed semicolon */
+  width: 70px; /* Button width */
+  height: 70px; /* Button height */
+  background-color: #C98860; /* Button color */
+  border-radius: 50%; /* Make button round */
+  display: flex; /* Flex layout */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  text-decoration: none; /* Remove underline */
+  color: white; /* Text color */
+  font-weight: bold; /* Bold text */
+  font-size: 14px; /* Font size */
+  text-align: center; /* Center text */
+  padding: 10px; /* Inner padding */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Hover animation */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow for 3D effect */
+  position: absolute; /* Positioned absolutely */
 }
 
 .circle-button {
-  margin-top: -31%;
-  margin-left: 32%;
+  margin-top: -31%; /* Vertical position */
+  margin-left: 32%; /* Horizontal position */
 }
 
 .circle-button2 {
-  margin-top: -13%;
-  margin-left: 32%;
+  margin-top: -13%; /* Vertical position */
+  margin-left: 32%; /* Horizontal position */
 }
 
 .circle-button3 {
-  margin-top: 5%;
-  margin-left: 32%;
+  margin-top: 5%; /* Vertical position */
+  margin-left: 32%; /* Horizontal position */
 }
 
 .circle-button:hover,
 .circle-button2:hover,
 .circle-button3:hover {
-  background-color: #e0b837;
-  transform: scale(1.1);
+  background-color: #e0b837; /* Change color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
-    /* Nav bar container */
-    nav {
-      width: 100%;                /* full width across the page */
-      background-color: #1e1b1a;  /* dark background */
-      position: fixed;            /* stays at the top */
-      top: 0;
-      left: 0;
-      z-index: 1000;
-    }
+/* Nav bar container */
+nav {
+  width: 100%; /* Full width navbar */
+  background-color: #1e1b1a; /* Dark background */
+  position: fixed; /* Stays at top */
+  top: 0; /* Position at top */
+  left: 0;
+  z-index: 1000; /* Layer above content */
+}
 
-    /* Nav list */
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;    /* center the links */
-    }
+/* Nav list */
+nav ul {
+  list-style: none; /* Remove bullets */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  display: flex; /* Horizontal layout */
+  justify-content: center; /* Center links */
+}
 
-    /* Nav items */
-    nav li {
-      margin: 0 10px;             /* small spacing between links */
-    }
+/* Nav items */
+nav li {
+  margin: 0 10px; /* Space between links */
+}
 
-    /* Nav links */
-    nav a {
-      display: block;
-      padding: 10px 15px;         /* short width links */
-      text-decoration: none;
-      color: #f8e6d0;             /* light text */
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
+/* Nav links */
+nav a {
+  display: block; /* Makes entire link clickable */
+  padding: 10px 15px; /* Inner padding */
+  text-decoration: none; /* Remove underline */
+  color: #f8e6d0; /* Link color */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
 
-    nav a:hover {
-      background-color: #FEBE00;  /* highlight on hover */
-      color: #1e1b1a;
-      border-radius: 4px;
-    }
+nav a:hover {
+  background-color: #FEBE00; /* Highlight on hover */
+  color: #1e1b1a; /* Change text color on hover */
+  border-radius: 4px; /* Rounded corners on hover */
+}
 
-    /* Add some top padding to body so content isn't hidden behind fixed nav */
-    .content {
-      padding-top: 60px;
-    }
-
+/* Add top padding to avoid fixed nav overlap */
+.content {
+  padding-top: 60px; /* Space for fixed nav */
+}
 
 #market,
 #margarita,
 #bingo {
-  scroll-margin-top: 134px; /* adjust as needed */
+  scroll-margin-top: 134px; /* Offset for scrolling to anchor */
 }
 
 html {
-  scroll-padding-top: 164px;
+  scroll-padding-top: 164px; /* Offset for scrolling to anchor */
 }
