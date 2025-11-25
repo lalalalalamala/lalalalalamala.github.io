@@ -233,9 +233,9 @@ header h1 {
     }
 
 #local-delivery {
-  scroll-margin-top: 100px; /* adjust as needed */
+  scroll-margin-top: 120px; /* adjust as needed */
 }
 
 html {
-  scroll-padding-top: 120px;
+  scroll-padding-top: 150px;
 }
