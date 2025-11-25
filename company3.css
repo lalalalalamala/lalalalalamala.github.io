@@ -278,3 +278,10 @@ h2 {
     .content {
       padding-top: 60px;
     }
+
+#hard-fancy,
+#fancy,
+#venue-rentals,
+#upcoming {
+  scroll-margin-top: 100px; /* adjust as needed */
+}
