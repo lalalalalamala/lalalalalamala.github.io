@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dream Calendar</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== PAGE ===== */
+body {
+  background: #2F223A;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding-top: 60px;
+}
+.phone {
+  width: 390px;
+  height: 844px;
+  background:#2F223A ;
+  border-radius: 24px;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  color: white;
+}
+
+/* ===== WRENCH BUTTON ===== */
+.wrench {
+  position: absolute;
+  top: 120px;
+  right: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.wrench img {
+  width: 50px;
+}
+
+/* ===== MASCOT ===== */
+.mascot {
+  position: absolute;
+  top: 5px;
+  left: 60%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.mascot img {
+  width: 120px;
+}
+
+/* ===== SPEECH BUBBLE ===== */
+.speech {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+  width: 155px;
+  background: white;
+  color: black;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 10px 8px;
+  border-radius: 16px;
+  text-align: center;
+  line-height: 1.3;
+  z-index: 4;
+}
+
+.speech::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: 10px solid white;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+/* ===== MONTH + CLOSE ARROWS ===== */
+.month-wrapper {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px; /* keeps arrows close */
+}
+
+.month {
+  font-family: "Pacifico", cursive;
+  font-size: 26px;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* ===== CALENDAR ===== */
+.calendar {
+  width: 330px;
+  margin: 12px auto 0;
+}
+
+.weekdays,
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.weekdays div {
+  height: 28px;
+  border: 1px solid rgba(255,255,255,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  opacity: 0.9;
+}
+
+.days div {
+  height: 38px;
+  border: 1px solid rgba(255,255,255,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+/* ===== TODAY ===== */
+.today {
+  border: 2px solid red !important;
+}
+
+/* ===== PROCEED ===== */
+.proceed {
+  display: block;
+  margin: 20px auto 28px;
+  background: #a87cd6;
+  border: none;
+  color: white;
+  font-family: "Pacifico", cursive;
+  font-size: 18px;
+  padding: 10px 44px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+  .mascot, .speech {
+    transition: opacity 0.5s ease;
+  }
+  .hidden {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+  }
+
+.proceed:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+
+  .proceed.clicked {
+    transform: scale(1.5); /* button grows */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  }
+
+  .wrench:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+
+  /* Click effect */
+  .wrench.clicked {
+    transform: scale(1.5); /* button grows */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  }
+
+.days div {
+  position: relative;
+}
+
+/* Icon to the RIGHT of the number */
+.icon-right {
+  position: absolute;
+  right: 0px;
+  font-size: 14px;
+  top: 15px;
+}
+
+/* Icon-only cell (Jan 1 fireworks) */
+.icon-only {
+  font-size: 18px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="phone">
+
+  <div class="speech">
+    RECORD YOUR<br>DREAM UNDER<br>TODAYS DATE!
+  </div>
+
+  <div class="mascot">
+    <img src="https://i.ibb.co/W4mj6gWv/Screenshot-2026-01-13-115405.png" alt="Star mascot">
+  </div>
+
+  <button class="wrench">
+    <img src="https://i.ibb.co/KpFpZxLy/Screenshot-2026-01-13-114659.png" alt="Settings">
+  </button>
+
+  <!-- Month with close arrows -->
+  <div class="month-wrapper">
+    <button class="arrow" onclick="changeMonth(-1)">‹</button>
+    <div class="month" id="monthName"></div>
+    <button class="arrow" onclick="changeMonth(1)">›</button>
+  </div>
+
+  <div class="calendar">
+    <div class="weekdays">
+      <div>Sun</div><div>Mon</div><div>Tue</div>
+      <div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+    </div>
+    <div class="days" id="days"></div>
+  </div>
+
+  <button class="proceed">Proceed</button>
+
+</div>
+
+<script>
+let currentDate = new Date();
+
+const monthNames = [
+  "January","February","March","April","May","June",
+  "July","August","September","October","November","December"
+];
+
+function renderCalendar() {
+  const daysEl = document.getElementById("days");
+  daysEl.innerHTML = "";
+
+  const month = currentDate.getMonth();
+  const year = currentDate.getFullYear();
+  const today = new Date();
+
+  document.getElementById("monthName").textContent = monthNames[month];
+
+  const firstDay = new Date(year, month, 1).getDay();
+  const totalDays = new Date(year, month + 1, 0).getDate();
+
+  // Empty cells before month starts
+  for (let i = 0; i < firstDay; i++) {
+    daysEl.innerHTML += "<div></div>";
+  }
+
+  // Month days
+  for (let d = 1; d <= totalDays; d++) {
+    const cell = document.createElement("div");
+    cell.textContent = d;
+
+    if (
+      d === today.getDate() &&
+      month === today.getMonth() &&
+      year === today.getFullYear()
+    ) {
+      cell.classList.add("today");
+    }
+
+    /* 🎄 Christmas tree (Dec 25, right of number) */
+    if (month === 11 && d === 25) {
+      const tree = document.createElement("span");
+      tree.textContent = "🎄";
+      tree.className = "icon-right";
+      cell.appendChild(tree);
+    }
+
+    daysEl.appendChild(cell);
+  }
+
+  /* 🎆 Fireworks = FIRST box AFTER Dec 31 */
+  if (month === 11) {
+    const fireworksCell = document.createElement("div");
+    fireworksCell.classList.add("icon-only");
+    fireworksCell.textContent = "🎆";
+    daysEl.appendChild(fireworksCell);
+  }
+}
+
+function changeMonth(dir) {
+  currentDate.setMonth(currentDate.getMonth() + dir);
+  renderCalendar();
+}
+
+renderCalendar();
+
+  // Function to hide elements after a delay
+  function hideAfterDelay(className, delay) {
+    const elements = document.querySelectorAll(`.${className}`);
+    elements.forEach(el => {
+      setTimeout(() => {
+        el.classList.add('hidden');
+      }, delay);
+    });
+  }
+
+  // Start timers after page loads
+  window.addEventListener('load', () => {
+    hideAfterDelay('speech', 20000); // speech disappears after 20 seconds
+    hideAfterDelay('mascot', 25000); // mascot disappears 5 seconds later (20 + 5)
+  });
+
+  function proceedToPage() {
+    const button = document.querySelector('.proceed-btn');
+    
+    // Add class to make it grow
+    button.classList.add('clicked');
+
+    // Wait for the animation (300ms) then redirect
+    setTimeout(() => {
+      window.location.href = 'https://example.com'; // replace with your page
+    }, 300); // matches the transition duration
+  }
+
+  function wrenchClick() {
+    const button = document.querySelector('.wrench');
+    
+    // Add class to make it grow
+    button.classList.add('clicked');
+
+    // Wait for the animation (300ms) then redirect
+    setTimeout(() => {
+      window.location.href = 'https://example.com'; // replace with your page
+    }, 300); // matches the transition duration
+  }
+
+</script>
+
+
+
+</body>
+</html>
