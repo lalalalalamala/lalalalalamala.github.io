@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cookies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    @font-face {
+      font-family: "Bobby Jones";
+      src: url("BobbyJones.ttf") format("truetype");
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #2F223A;
+      font-family: "Bobby Jones", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      padding-top: 60px;
+    }
+
+    .phone {
+      width: 390px;
+      height: 844px;
+      background: #2F223A;
+      padding: 32px 24px 24px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border-radius: 24px;
+    }
+
+    /* TOP ACCEPT COOKIES BUTTON */
+    .top-btn-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .accept-btn {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: none;
+      cursor: pointer;
+
+      color: #1f2d5c;
+      font-family: "Bobby Jones", sans-serif;
+      font-size: 16px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    /* TITLE */
+    .title {
+      text-align: center;
+      font-size: 22px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #ff4fa8, #ffb347);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    /* CONTENT TEXT */
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .content-inner {
+      max-width: 260px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.4;
+      background: linear-gradient(90deg, #ffffff 0%, #7fd1ff 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    /* BOTTOM I AGREE BUTTON */
+    .bottom-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 60px;
+    }
+
+    .agree-button {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: #ff9b6a;
+      border: none;
+      cursor: pointer;
+
+      color: #ffffff;
+      font-family: "Bobby Jones", sans-serif;
+      font-size: 16px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media (max-width: 420px) {
+      .phone {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+      }
+    }
+
+    /* BOTH BUTTONS – hover + click effects */
+.accept-btn,
+.agree-button {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover = slightly bigger */
+.accept-btn:hover,
+.agree-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Click = bigger "pop" */
+.accept-btn:active,
+.agree-button:active {
+  transform: scale(1.2);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="phone">
+
+    <!-- ACCEPT COOKIES BUTTON -->
+    <div class="top-btn-wrapper">
+      <button class="accept-btn">
+        ACCEPT<br>COOKIES
+      </button>
+    </div>
+
+    <!-- TITLE -->
+    <div class="title">
+      CONTACT
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+      <div class="content-inner">
+        <p>
+         If you have questions about these terms, please contact us at:
+          <br><br>
+          [440042898@gapps.yrdsb.ca]
+        </p>
+      </div>
+    </div>
+
+    <!-- I AGREE BUTTON -->
+    <div class="bottom-nav">
+      <button class="agree-button">
+        I AGREE
+      </button>
+    </div>
+
+  </div>
+</body>
+</html>
